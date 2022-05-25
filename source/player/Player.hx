@@ -11,7 +11,7 @@ import input.Input;
 // All player functionality lives inside here.
 class Player extends FlxSprite
 {
-    static inline var SPEED : Float = 130.0;
+    static inline var SPEED : Float = 500.0;
     var xp                  : Float = 10.0;
     var yp                  : Float = 10.0;
 
