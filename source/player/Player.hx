@@ -6,7 +6,7 @@ import flixel.FlxState;
 import flixel.FlxSprite;
 import flixel.util.FlxColor;
 import flixel.math.FlxPoint;
-import Input;
+import input.Input;
 
 // All player functionality lives inside here.
 class Player extends FlxSprite
