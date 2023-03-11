@@ -72,7 +72,7 @@ class Player extends FlxSprite
                 newAngle = 0;
 
             velocity.set(SPEED, 0);
-            velocity.rotate(FlxPoint.weak(0,0), newAngle);
+            velocity.pivotDegrees(FlxPoint.weak(0,0), newAngle);
         }
 
     }
