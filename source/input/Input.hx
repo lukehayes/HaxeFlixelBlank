@@ -9,63 +9,31 @@ class Input
 {
     static public function LEFT() : Bool
     {
-        if(FlxG.keys.justPressed.A)
-        {
-            return true;
-        }else 
-        {
-
-            return false;
-        }
+        var moved = FlxG.keys.justPressed.A ? true : false;
+        return moved;
     }
 
     static public function RIGHT() : Bool
     {
-        if(FlxG.keys.justPressed.D)
-        {
-            return true;
-        }else 
-        {
-
-            return false;
-        }
+        var moved = FlxG.keys.justPressed.D ? true : false;
+        return moved;
     }
 
     static public function UP() : Bool
     {
-        if(FlxG.keys.justPressed.W)
-        {
-            return true;
-        }else 
-        {
-
-            return false;
-        }
+        var moved = FlxG.keys.justPressed.W ? true : false;
+        return moved;
     }
 
     static public function DOWN() : Bool
     {
-
-        if(FlxG.keys.justPressed.S)
-        {
-            return true;
-        }else 
-        {
-
-            return false;
-        }
+        var moved = FlxG.keys.justPressed.S ? true : false;
+        return moved;
     }
 
     static public function SHOOT() : Bool
     {
-
-        if(FlxG.keys.justPressed.SPACE || FlxG.mouse.pressed)
-        {
-            return true;
-        }else 
-        {
-
-            return false;
-        }
+        var shoot = (FlxG.keys.justPressed.SPACE || FlxG.mouse.pressed) ? true : false;
+        return shoot;
     }
 }
