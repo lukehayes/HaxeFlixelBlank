@@ -5,9 +5,7 @@ import player.Player;
 
 class PlayState extends FlxState
 {
-    /**
-      Our instance of Player
-      **/
+    /** The default instance of Player. **/
     var player : Player;
 
     override public function create()
